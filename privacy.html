@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>碳硅进化 · 隐私政策</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 18px 64px; color: #1a1a1a; line-height: 1.75; font-size: 15px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
+  .meta { color: #888; font-size: 13px; margin-bottom: 24px; }
+  .callout { background: #f6f7f9; padding: 12px 14px; border-radius: 8px; font-size: 13.5px; color: #444; margin-top: 24px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: #2b6cb0; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; font-size: 13px; color: #888; }
+</style>
+</head>
+<body>
+  <h1>碳硅进化 隐私政策</h1>
+  <div class="meta">生效日期：2026 年 10 月 10 日 · 版本 1.0</div>
+
+  <p><strong>一句话总结</strong><br/>
+  碳硅进化是一款<strong>纯本地运行</strong>的个人记录工具。我们没有服务器，不要求注册账号，也不会把你的照片、体重或喝水记录上传到任何地方。</p>
+
+  <h2>一、我们收集哪些数据</h2>
+  <p>只有你在 App 内主动录入的内容：</p>
+  <ul>
+    <li><strong>身体数据</strong>：身高、性别、年龄、活动系数、体重记录</li>
+    <li><strong>照片</strong>：你拍摄的面部照与身材记录照</li>
+    <li><strong>饮水记录</strong>：每次补水的时间与容量</li>
+    <li><strong>戒断记录</strong>：开始日期、破戒事件与备注</li>
+    <li><strong>AI 会话</strong>：你在 AI 聚合中输入的提问与返回的回答</li>
+    <li><strong>配置</strong>：你自行填写的 AI 服务地址与密钥</li>
+  </ul>
+  <p>我们不收集：设备标识符、广告 ID、位置、通讯录、使用行为埋点。App 内不含任何第三方统计或广告 SDK。</p>
+
+  <h2>二、数据存储在哪里</h2>
+  <p>以上数据<strong>全部保存在你的设备本地</strong>：结构化记录存放在本机数据库，照片存放在 App 私有沙盒目录，两者都不会被系统相册或其他 App 直接读取。</p>
+  <p>你填写的 AI 密钥保存在操作系统提供的安全存储中（iOS 钥匙串 / Android Keystore），以密文形式保存，App 自身不持有可读副本，其他 App 无法读取。</p>
+  <p><strong>卸载 App 会一并删除全部本地数据</strong>，且无法由我们恢复。请在卸载前使用「导出备份」。</p>
+
+  <h2>三、第三方 AI 接口调用说明</h2>
+  <p>AI 聚合是 App 内唯一需要联网的功能，且<strong>只有在你主动点击发送时</strong>才会发起请求。</p>
+  <ul>
+    <li>请求由你的设备<strong>直连</strong>你在「供应商配置」中填写的服务地址（Base URL），不经过本 App 的任何中转服务器——我们根本没有服务器。</li>
+    <li>会离开设备的内容<strong>仅限</strong>：你输入的提问文本；开启「主判汇总」时，还会把各家回答的文本发给主判供应商用于收敛。</li>
+    <li><strong>App 不会自动附带你的身体数据</strong>（体重、饮水、照片、戒断记录）。只有你主动把这些数字写进提问文字里，它们才会随该段文字一起发送。</li>
+    <li><strong>照片原图在任何情况下都不会被上传</strong>，App 内不存在上传照片的能力。</li>
+    <li>你的 API 密钥仅用于向<strong>该供应商本人</strong>鉴权，不会被发送到其他供应商或任何第三方。</li>
+    <li>各家供应商如何处理你发送的文本，适用其自身的隐私政策，请在使用前自行阅读并确认。</li>
+  </ul>
+  <p>未启用 AI 功能、或未填写任何密钥时，App 不会发起任何网络请求。</p>
+
+  <h2>四、我们不会做什么</h2>
+  <ul>
+    <li>不向任何第三方<strong>出售、共享或披露</strong>你的健康数据（照片、体重、体成分、饮水、戒断记录）</li>
+    <li>不做云同步、不做行为分析、不用于训练任何模型</li>
+    <li>不读取你相册中除本 App 拍摄与保存之外的任何照片</li>
+  </ul>
+
+  <h2>五、你的权利</h2>
+  <ul>
+    <li><strong>查看 / 导出</strong>：设置 → 数据与隐私 → 导出备份，得到加密 ZIP</li>
+    <li><strong>删除单条</strong>：记录列表左滑删除；照片可在时间轴中删除</li>
+    <li><strong>删除全部</strong>：设置 → 数据与隐私 → 清除全部数据（不可恢复）</li>
+    <li><strong>撤回授权</strong>：在系统设置中关闭相机 / 通知权限，核心记录功能仍可手动使用</li>
+    <li><strong>彻底删除</strong>：卸载 App 即视为删除全部数据</li>
+  </ul>
+  <p>我们无法代你删除数据——因为数据从不在我们手上。</p>
+
+  <h2>六、订阅与支付</h2>
+  <p>如你购买了 Pro，订阅由 Apple 应用内购买处理。我们收不到你的支付卡信息，只能通过 App Store 校验订阅是否有效。订阅状态保存在本机与你的 Apple ID 中。</p>
+
+  <h2>七、儿童隐私</h2>
+  <p>本 App 面向 17 岁及以上用户，不会有意收集儿童个人信息。</p>
+
+  <h2>八、政策更新</h2>
+  <p>如有重大变更，我们会在 App 内提示，并更新上方生效日期。继续使用即视为接受更新后的政策。</p>
+
+  <h2>九、开发者主体与联系方式</h2>
+  <p>本应用由 <strong>李思翰</strong> 开发并运营。</p>
+  <ul>
+    <li>联系邮箱：<a href="mailto:lisihan@outlook.com">lisihan@outlook.com</a>（任何隐私问题可发送至此，通常 3 个工作日内回复）</li>
+    <li>隐私政策：<a href="/privacy">/privacy</a></li>
+    <li>使用条款：<a href="/terms">/terms</a></li>
+  </ul>
+
+  <div class="callout">开发者主体：李思翰（个人开发者）。ASC 后台「App 信息 → 版权 / 商家名称」与此一致。</div>
+
+  <footer>© 2026 碳硅进化 CarboSil Evo · 李思翰</footer>
+</body>
+</html>
